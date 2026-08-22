@@ -1,17 +1,17 @@
 <!DOCTYPE html>
-<html lang="hi">
+<html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Bharat Ride Tours India | Scooty & Bike Ride Tours – Delhi, Agra, Khatu Shyam, Jaipur, Varanasi, Uttarakhand, Nepal</title>
 <meta name="description" content="Two-wheeler guided ride tours across India for solo travellers and highway-shy riders. Delhi to Khatu Shyam, Agra, Jaipur, Varanasi, Uttarakhand, Ayodhya & Nepal — scooty/bike tours with a trusted driver. Book your ride today.">
 <meta name="keywords" content="scooty ride tour, bike ride tour India, two wheeler tour, solo travel bike, Delhi to Khatu Shyam bike ride, Gurugram to Uttarakhand bike tour, Delhi to Jaipur scooty ride, Delhi to Varanasi bike tour, Delhi to Ayodhya ride, Delhi to Nepal bike tour, highway ride tour Gurugram, two wheeler tour Delhi NCR">
-<link rel="canonical" href="https://bharatridetoursindia-byte.github.io/bharatridetoursindia/">
+<link rel="canonical" href="https://akhileshjoshi887-sudo.github.io/bharatridetoursindia/">
 <meta property="og:type" content="website">
 <meta property="og:title" content="Bharat Ride Tours India | Scooty & Bike Ride Tours across India">
 <meta property="og:description" content="Two-wheeler guided ride tours for solo travellers and highway-shy riders — Agra, Khatu Shyam, Jaipur, Varanasi, Uttarakhand, Ayodhya, Nepal.">
 <meta property="og:image" content="icon-512.png">
-<meta property="og:url" content="https://bharatridetoursindia-byte.github.io/bharatridetoursindia/">
+<meta property="og:url" content="https://akhileshjoshi887-sudo.github.io/bharatridetoursindia/">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Bharat Ride Tours India">
 <meta name="twitter:description" content="Scooty & bike ride tours across India for solo travellers and highway-shy riders.">
@@ -21,8 +21,8 @@
   "@context": "https://schema.org",
   "@type": "TravelAgency",
   "name": "Bharat Ride Tours India",
-  "image": "https://bharatridetoursindia-byte.github.io/bharatridetoursindia/icon-512.png",
-  "url": "https://bharatridetoursindia-byte.github.io/bharatridetoursindia/",
+  "image": "https://akhileshjoshi887-sudo.github.io/bharatridetoursindia/icon-512.png",
+  "url": "https://akhileshjoshi887-sudo.github.io/bharatridetoursindia/",
   "telephone": "+91-9818062529",
   "priceRange": "₹₹",
   "address": {
@@ -105,6 +105,10 @@
   .navlinks a:hover{ opacity:1; }
   .navlinks a:focus-visible, a:focus-visible, button:focus-visible, input:focus-visible{ outline: 2px solid var(--chakra); outline-offset:3px; }
   .nav-cta{ background:var(--ink); color:var(--paper); padding:10px 20px; border-radius:100px; font-size:0.88rem; font-weight:600; text-decoration:none; white-space:nowrap; }
+  .lang-switch{ display:flex; gap:2px; background:rgba(28,27,24,0.06); border-radius:100px; padding:3px; }
+  .lang-btn{ border:none; background:transparent; padding:6px 14px; border-radius:100px; font-family:'Space Mono', monospace; font-size:0.78rem; font-weight:700; color:var(--ink-soft); cursor:pointer; transition:all .18s ease; }
+  .lang-btn.active{ background:var(--night); color:#fff; }
+  @media (max-width:860px){ .lang-switch{ order:3; } }
 
   /* ---------- HERO ---------- */
   .hero{
@@ -371,23 +375,27 @@
       <a href="#gallery">Gallery</a>
       <a href="#contact">Contact</a>
     </div>
+    <div class="lang-switch">
+      <button class="lang-btn active" data-lang="en">EN</button>
+      <button class="lang-btn" data-lang="hi">HI</button>
+    </div>
     <a href="#booking" class="nav-cta">Book a Ride</a>
   </div>
 </nav>
 
 <header class="hero">
   <div class="wrap">
-    <span class="eyebrow">● Boys & Girls dono ke liye · Ghar tak Pickup-Drop · Highway-shy riders</span>
-    <h1>Aapko chalana nahi aata? <em>Koi baat nahi.</em><br>Main chalata hoon, aap ghoomiye.</h1>
-    <p class="lede">Ek two-wheeler, ek trusted driver, aur poore Bharat ke rastey — dhaam se dhaba tak. Jo log akele nikalna chahte hain, ya highway pe khud drive karne se hichkichaate hain, unke liye main hoon aapka ride partner. <strong>Pickup aapke ghar se, drop bhi aapke ghar tak.</strong></p>
+    <span class="eyebrow"><span class="i18n" data-hi="● Boys &amp; Girls dono ke liye · Ghar tak Pickup-Drop · Highway-shy riders">● For Boys &amp; Girls both · Pickup-Drop at your door · Highway-shy riders</span></span>
+    <h1><span class="i18n" data-hi="Aapko chalana nahi aata? &lt;em&gt;Koi baat nahi.&lt;/em&gt;&lt;br&gt;Main chalata hoon, aap ghoomiye.">Don't know how to ride? <em>No problem.</em><br>I'll drive, you enjoy the trip.</span></h1>
+    <p class="lede"><span class="i18n" data-hi="Ek two-wheeler, ek trusted driver, aur poore Bharat ke rastey — dhaam se dhaba tak. Jo log akele nikalna chahte hain, ya highway pe khud drive karne se hichkichaate hain, unke liye main hoon aapka ride partner. &lt;strong&gt;Pickup aapke ghar se, drop bhi aapke ghar tak.&lt;/strong&gt;">One two-wheeler, one trusted driver, and routes across India — from sacred shrines to roadside dhabas. For those who want to travel solo, or hesitate to drive on the highway themselves, I'm your ride partner. <strong>Pickup from your home, drop back to your home too.</strong></span></p>
     <div class="hero-ctas">
-      <a href="#tours" class="btn-primary">Pehla tour dekhein</a>
-      <a href="#calculator" class="btn-ghost">Fare calculate karein</a>
+      <a href="#tours" class="btn-primary"><span class="i18n" data-hi="Pehla tour dekhein">See the first tour</span></a>
+      <a href="#calculator" class="btn-ghost"><span class="i18n" data-hi="Fare calculate karein">Calculate fare</span></a>
     </div>
   </div>
 
   <div class="highway">
-    <div class="route-label"><span>GURUGRAM · SEC 44</span><span>MATHURA</span><span>AGRA</span></div>
+    <div class="route-label"><span>GURUGRAM</span><span>MATHURA</span><span>AGRA</span></div>
     <svg viewBox="0 0 1120 210" preserveAspectRatio="none">
       <path d="M0,150 C 220,150 260,60 460,60 S 700,150 900,150 S 1000,90 1120,90" fill="none" stroke="rgba(255,255,255,0.12)" stroke-width="34" stroke-linecap="round"/>
       <path class="dash" d="M0,150 C 220,150 260,60 460,60 S 700,150 900,150 S 1000,90 1120,90" fill="none" stroke="rgba(255,255,255,0.5)" stroke-width="2"/>
@@ -405,78 +413,78 @@
 
 <section class="for-whom">
   <div class="wrap">
-    <span class="kicker">Yeh service kiske liye hai</span>
+    <span class="kicker"><span class="i18n" data-hi="Yeh service kiske liye hai">Who this service is for</span></span>
     <div class="sec-head">
-      <h2>Har koi ride share nahi hai.</h2>
-      <p>Hum sirf un logon ke liye bane hain jinke liye highway ya two-wheeler ek rukawat hai — safar nahi.</p>
+      <h2><span class="i18n" data-hi="Har koi ride share nahi hai.">Not everyone shares a ride.</span></h2>
+      <p><span class="i18n" data-hi="Hum sirf un logon ke liye bane hain jinke liye highway ya two-wheeler ek rukawat hai — safar nahi.">We exist only for people who see the highway or the two-wheeler as an obstacle — not the journey itself.</span></p>
     </div>
     <div class="whom-grid">
       <div class="whom-card">
         <span class="num">01</span>
-        <h3>Two-wheeler chalana nahi aata</h3>
-        <p>Balance ki chinta ke bina, bas peeche baithiye aur raste dekhiye.</p>
+        <h3><span class="i18n" data-hi="Two-wheeler chalana nahi aata">Don't know how to ride a two-wheeler</span></h3>
+        <p><span class="i18n" data-hi="Balance ki chinta ke bina, bas peeche baithiye aur raste dekhiye.">No worries about balance — just sit back and watch the road go by.</span></p>
       </div>
       <div class="whom-card">
         <span class="num">02</span>
-        <h3>Highway pe drive karne se darr lagta hai</h3>
-        <p>Pahaadi ghumaav ho ya tez traffic — driving mera kaam hai, dekhna aapka.</p>
+        <h3><span class="i18n" data-hi="Highway pe drive karne se darr lagta hai">Scared of driving on the highway</span></h3>
+        <p><span class="i18n" data-hi="Pahaadi ghumaav ho ya tez traffic — driving mera kaam hai, dekhna aapka.">Hill curves or heavy traffic — driving is my job, sightseeing is yours.</span></p>
       </div>
       <div class="whom-card">
         <span class="num">03</span>
-        <h3>Akele ghoomna chahte hain</h3>
-        <p>Na group ka wait, na 4-seater fill hone ka intezaar. Aap akele bhi nikal sakte hain.</p>
+        <h3><span class="i18n" data-hi="Akele ghoomna chahte hain">Want to travel solo</span></h3>
+        <p><span class="i18n" data-hi="Na group ka wait, na 4-seater fill hone ka intezaar. Aap akele bhi nikal sakte hain.">No waiting for a group, no waiting for a 4-seater to fill up. You can set off solo.</span></p>
       </div>
     </div>
     <div class="whom-note">
-      <strong>Note:</strong> Agar aap khud confident rider hain jo highway par bina hichak nikal jaate hain, yeh service shayad aapke liye nahi hai — hum unke liye hain jinhe ek bharosemand saathi chahiye.
+      <span class="i18n" data-hi="&lt;strong&gt;Note:&lt;/strong&gt; Agar aap khud confident rider hain jo highway par bina hichak nikal jaate hain, yeh service shayad aapke liye nahi hai — hum unke liye hain jinhe ek bharosemand saathi chahiye."><strong>Note:</strong> If you're already a confident rider who heads out on the highway without hesitation, this service may not be for you — we're here for those who need a trustworthy companion.</span>
     </div>
     <div class="whom-note" style="border-left-color:var(--saffron); background:rgba(255,111,30,0.06); margin-top:16px;">
-      <strong>Boys aur Girls dono ke liye:</strong> Ye service sabke liye equally safe aur available hai. Aur har tour mein <strong>aapke ghar tak pickup aur drop</strong> shaamil hai — kahin aur pahunchne ki chinta mat kariye.
+      <span class="i18n" data-hi="&lt;strong&gt;Boys aur Girls dono ke liye:&lt;/strong&gt; Ye service sabke liye equally safe aur available hai. Aur har tour mein &lt;strong&gt;aapke ghar tak pickup aur drop&lt;/strong&gt; shaamil hai — kahin aur pahunchne ki chinta mat kariye."><strong>For Boys and Girls, both:</strong> This service is equally safe and available for everyone. And every tour includes <strong>pickup and drop right at your home</strong> — no need to worry about reaching anywhere else.</span>
     </div>
   </div>
 </section>
 
 <section id="tours">
   <div class="wrap">
-    <span class="kicker">Pehla circuit</span>
+    <span class="kicker"><span class="i18n" data-hi="Pehla circuit">First circuit</span></span>
     <div class="sec-head">
       <h2>Gurugram → Mathura → Agra</h2>
-      <p>Ek din ka ride, Krishna nagri se Taj tak — dono taraf ka safar, ek hi fare mein.</p>
+      <p><span class="i18n" data-hi="Ek din ka ride, Krishna nagri se Taj tak — dono taraf ka safar, ek hi fare mein.">A one-day ride, from the city of Krishna to the Taj — both ways, one fare.</span></p>
     </div>
 
     <div class="tour-card">
       <div class="tour-visual">
         <div>
-          <div class="badge" style="background:rgba(255,255,255,0.1); color:#FFC98A;">Round trip · 1 din</div>
-          <h3 style="font-size:1.5rem; margin-top:10px;">Din ka poora rasta</h3>
+          <div class="badge" style="background:rgba(255,255,255,0.1); color:#FFC98A;"><span class="i18n" data-hi="Round trip · 1 din">Round trip · 1 day</span></div>
+          <h3 style="font-size:1.5rem; margin-top:10px;"><span class="i18n" data-hi="Din ka poora rasta">The full day's route</span></h3>
         </div>
         <div class="route-steps">
-          <div class="route-step"><span class="t">6:00 AM</span><div><div class="p">Gurugram se prasthan</div><div class="d">Traffic-free jaldi shuruaat</div></div></div>
-          <div class="route-step"><span class="t">9:30 AM</span><div><div class="p">Mathura — chai break</div><div class="d">30 min ka aaram</div></div></div>
-          <div class="route-step"><span class="t">12:00 PM</span><div><div class="p">Agra pahuchna</div><div class="d">Bhojan + sightseeing</div></div></div>
-          <div class="route-step"><span class="t">3:00 PM</span><div><div class="p">Wapasi shuru</div><div class="d">Agra se Gurugram</div></div></div>
-          <div class="route-step"><span class="t">7:30 PM</span><div><div class="p">Gurugram wapas</div><div class="d">Safe drop</div></div></div>
+          <div class="route-step"><span class="t">6:00 AM</span><div><div class="p"><span class="i18n" data-hi="Gurugram se prasthan">Depart from Gurugram</span></div><div class="d"><span class="i18n" data-hi="Traffic-free jaldi shuruaat">Early start, before the traffic</span></div></div></div>
+          <div class="route-step"><span class="t">9:30 AM</span><div><div class="p"><span class="i18n" data-hi="Mathura — chai break">Mathura — chai break</span></div><div class="d"><span class="i18n" data-hi="30 min ka aaram">30 min rest stop</span></div></div></div>
+          <div class="route-step"><span class="t">12:00 PM</span><div><div class="p"><span class="i18n" data-hi="Agra pahuchna">Arrive in Agra</span></div><div class="d"><span class="i18n" data-hi="Bhojan + sightseeing">Lunch + sightseeing</span></div></div></div>
+          <div class="route-step"><span class="t">3:00 PM</span><div><div class="p"><span class="i18n" data-hi="Wapasi shuru">Return journey begins</span></div><div class="d"><span class="i18n" data-hi="Agra se Gurugram">Agra to Gurugram</span></div></div></div>
+          <div class="route-step"><span class="t">7:30 PM</span><div><div class="p"><span class="i18n" data-hi="Gurugram wapas">Back in Gurugram</span></div><div class="d">Safe drop</div></div></div>
         </div>
       </div>
       <div class="tour-info">
         <span class="badge" style="background:var(--saffron); color:#fff;">🔥 Launch Offer</span>
         <h3>Mathura–Agra Round Trip</h3>
-        <p>Aapki apni scooty, aapka apna driver. Rasta customize ho sakta hai — jahan rukna chahein, wahan rukiye.</p>
+        <p><span class="i18n" data-hi="Aapki apni scooty, aapka apna driver. Rasta customize ho sakta hai — jahan rukna chahein, wahan rukiye.">Your own scooty, your own driver. The route is customizable — stop wherever you like.</span></p>
         <div class="price-row">
           <span class="amt mono">₹1,499</span>
           <span class="strike-price mono">₹1,830</span>
           <span class="unit">/ passenger, round trip</span>
         </div>
         <ul class="incl">
-          <li>Scooty aur petrol shaamil</li>
+          <li><span class="i18n" data-hi="Scooty aur petrol shaamil">Scooty and petrol included</span></li>
           <li>Helmet provided</li>
           <li>Licensed, insured driver (1,00,000+ km highway experience)</li>
-          <li>Flexible stops — aapke hisaab se</li>
-          <li><strong>Aapke ghar tak pickup aur drop</strong> — kahin aur jaane ki zaroorat nahi</li>
-          <li>Boys aur girls dono ke liye — safe aur comfortable ride</li>
+          <li><span class="i18n" data-hi="Flexible stops — aapke hisaab se">Flexible stops — on your terms</span></li>
+          <li><span class="i18n" data-hi="&lt;strong&gt;Aapke ghar tak pickup aur drop&lt;/strong&gt; — kahin aur jaane ki zaroorat nahi"><strong>Pickup and drop right at your home</strong> — no need to go anywhere else</span></li>
+          <li><span class="i18n" data-hi="Boys aur girls dono ke liye — safe aur comfortable ride">For boys and girls both — a safe and comfortable ride</span></li>
         </ul>
-        <div class="weight-note">Rider weight limit: 70 kg tak (scooty ki safety ke liye)</div>
-        <a href="#booking" class="btn-primary" style="display:inline-block;">Yeh tour book karein</a>
+        <div class="weight-note"><span class="i18n" data-hi="Rider weight limit: 70 kg tak (scooty ki safety ke liye)">Rider weight limit: up to 70 kg (for the scooty's safety)</span></div>
+        <a href="#booking" class="btn-primary" style="display:inline-block;"><span class="i18n" data-hi="Yeh tour book karein">Book this tour</span></a>
       </div>
     </div>
   </div>
@@ -485,69 +493,69 @@
 <div class="flag-strip"></div>
 <section id="more-tours" style="background:var(--paper-2); padding-top:0;">
   <div class="wrap">
-    <span class="kicker">Aur bhi destinations</span>
+    <span class="kicker"><span class="i18n" data-hi="Aur bhi destinations">More destinations</span></span>
     <div class="sec-head">
-      <h2>Jahan bhi jaana ho, bas bata dijiye</h2>
-      <p>Dharmik sthal ho ya pahad — sabke liye din aur price fix hai, koi hidden charge nahi.</p>
+      <h2><span class="i18n" data-hi="Jahan bhi jaana ho, bas bata dijiye">Wherever you want to go, just let us know</span></h2>
+      <p><span class="i18n" data-hi="Dharmik sthal ho ya pahad — sabke liye din aur price fix hai, koi hidden charge nahi.">Whether it's a pilgrimage site or the hills — days and price are fixed for all, no hidden charges.</span></p>
     </div>
     <div class="more-tours-grid">
 
       <div class="mtour-card mtour-saffron">
         <div class="mtour-top">
-          <span class="mtour-badge">1 Din</span>
+          <span class="mtour-badge"><span class="i18n" data-hi="1 Din">1 Day</span></span>
           <div><span class="mtour-price mono">₹1,799</span><span class="mtour-strike mono">₹2,200</span></div>
         </div>
         <h4>Delhi → Khatu Shyam Mandir</h4>
-        <p>Ek din ka darshan trip, subah jaake shaam tak wapas. Ghar se pickup, ghar tak drop.</p>
+        <p><span class="i18n" data-hi="Ek din ka darshan trip, subah jaake shaam tak wapas. Ghar se pickup, ghar tak drop.">A one-day darshan trip, leave in the morning, back by evening. Pickup from home, drop back home.</span></p>
       </div>
 
       <div class="mtour-card mtour-white">
         <div class="mtour-top">
-          <span class="mtour-badge">4 Din</span>
+          <span class="mtour-badge"><span class="i18n" data-hi="4 Din">4 Days</span></span>
           <div><span class="mtour-price mono">₹3,999</span><span class="mtour-strike mono">₹4,400</span></div>
         </div>
         <h4>Gurugram → Uttarakhand</h4>
-        <p>Haridwar, Rishikesh, Kainchi Dham — pahadon ka safar. Boys/girls dono ke liye.</p>
+        <p><span class="i18n" data-hi="Haridwar, Rishikesh, Kainchi Dham — pahadon ka safar. Boys/girls dono ke liye.">Haridwar, Rishikesh, Kainchi Dham — a journey through the hills. For boys/girls both.</span></p>
       </div>
 
       <div class="mtour-card mtour-green">
         <div class="mtour-top">
-          <span class="mtour-badge">3 Din</span>
+          <span class="mtour-badge"><span class="i18n" data-hi="3 Din">3 Days</span></span>
           <div><span class="mtour-price mono">₹3,499</span><span class="mtour-strike mono">₹3,800</span></div>
         </div>
         <h4>Delhi → Jaipur</h4>
-        <p>Pink City ke forts aur bazaar ghumte hue. Ghar tak drop included.</p>
+        <p><span class="i18n" data-hi="Pink City ke forts aur bazaar ghumte hue. Ghar tak drop included.">Explore the forts and bazaars of the Pink City. Drop back home included.</span></p>
       </div>
 
       <div class="mtour-card mtour-saffron">
         <div class="mtour-top">
-          <span class="mtour-badge">5 Din</span>
+          <span class="mtour-badge"><span class="i18n" data-hi="5 Din">5 Days</span></span>
           <div><span class="mtour-price mono">₹7,499</span><span class="mtour-strike mono">₹8,100</span></div>
         </div>
         <h4>Delhi → Varanasi (Banaras)</h4>
-        <p>Ganga aarti aur ghaton ka anubhav, aaram se.</p>
+        <p><span class="i18n" data-hi="Ganga aarti aur ghaton ka anubhav, aaram se.">Experience the Ganga aarti and ghats, at a relaxed pace.</span></p>
       </div>
 
       <div class="mtour-card mtour-white">
         <div class="mtour-top">
-          <span class="mtour-badge">2 Din</span>
+          <span class="mtour-badge"><span class="i18n" data-hi="2 Din">2 Days</span></span>
           <div><span class="mtour-price mono">₹4,499</span><span class="mtour-strike mono">₹4,850</span></div>
         </div>
         <h4>Delhi → Ayodhya</h4>
-        <p>Ram Mandir darshan, ek chhota par yaadgar trip.</p>
+        <p><span class="i18n" data-hi="Ram Mandir darshan, ek chhota par yaadgar trip.">Ram Mandir darshan, a short but memorable trip.</span></p>
       </div>
 
       <div class="mtour-card mtour-wide mtour-green">
         <div class="mtour-top">
-          <span class="mtour-badge">7 Din</span>
+          <span class="mtour-badge"><span class="i18n" data-hi="7 Din">7 Days</span></span>
           <div><span class="mtour-price mono">₹10,999</span><span class="mtour-strike mono">₹11,500</span></div>
         </div>
         <h4>Delhi → Nepal (Kathmandu · Pashupatinath · Pokhara · Lumbini · Muktinath)</h4>
-        <p>Border crossing, permits aur poora Nepal circuit — sab guide ke saath. Boys aur girls dono ke liye safe trip.</p>
+        <p><span class="i18n" data-hi="Border crossing, permits aur poora Nepal circuit — sab guide ke saath. Boys aur girls dono ke liye safe trip.">Border crossing, permits, and the full Nepal circuit — all with a guide. A safe trip for boys and girls both.</span></p>
       </div>
 
     </div>
-    <p class="mtour-note">Sabhi tours mein <strong>ghar tak pickup aur drop</strong> shaamil hai, aur ye service <strong>boys aur girls dono</strong> ke liye equally available hai. Prices per-passenger, round-trip — scooty/bike, petrol, driver aur helmet included. Multi-day tours mein <strong>stay aur khaana shaamil nahi hai</strong> (alag se pay karna hoga).</p>
+    <p class="mtour-note"><span class="i18n" data-hi="Sabhi tours mein &lt;strong&gt;ghar tak pickup aur drop&lt;/strong&gt; shaamil hai, aur ye service &lt;strong&gt;boys aur girls dono&lt;/strong&gt; ke liye equally available hai. Prices per-passenger, round-trip — scooty/bike, petrol, driver aur helmet included. Multi-day tours mein &lt;strong&gt;stay aur khaana shaamil nahi hai&lt;/strong&gt; (alag se pay karna hoga).">All tours include <strong>pickup and drop at your home</strong>, and this service is equally available for <strong>boys and girls, both</strong>. Prices are per-passenger, round-trip — scooty/bike, petrol, driver, and helmet included. Multi-day tours do <strong>not include stay and food</strong> (to be paid separately).</span></p>
   </div>
 </section>
 
@@ -556,8 +564,8 @@
   <div class="wrap">
     <div class="calc-inner">
       <span class="kicker" style="color:#FFC98A;">Fare Calculator</span>
-      <h2 style="color:#fff; font-size:2.1rem;">Apna route daaliye, fare turant dekhiye</h2>
-      <p style="color:rgba(251,245,234,0.65); margin-top:12px; max-width:520px;">Distance, petrol rate aur margin ke hisaab se — round trip fare calculate karein.</p>
+      <h2 style="color:#fff; font-size:2.1rem;"><span class="i18n" data-hi="Apna route daaliye, fare turant dekhiye">Enter your route, see the fare instantly</span></h2>
+      <p style="color:rgba(251,245,234,0.65); margin-top:12px; max-width:520px;"><span class="i18n" data-hi="Distance, petrol rate aur margin ke hisaab se — round trip fare calculate karein.">Calculate your round trip fare based on distance, petrol rate, and margin.</span></p>
 
       <div class="calc-grid">
         <div>
@@ -574,7 +582,7 @@
             </div>
           </div>
           <div id="routeMap" class="route-map"></div>
-          <button type="button" id="calcRouteBtn" style="margin-top:12px; width:100%; background:rgba(255,111,30,0.15); border:1px solid rgba(255,111,30,0.4); color:#FFC98A; padding:12px 16px; border-radius:10px; font-family:'Inter'; font-weight:600; font-size:0.88rem; cursor:pointer;">📍 Route Calculate Karein</button>
+          <button type="button" id="calcRouteBtn" style="margin-top:12px; width:100%; background:rgba(255,111,30,0.15); border:1px solid rgba(255,111,30,0.4); color:#FFC98A; padding:12px 16px; border-radius:10px; font-family:'Inter'; font-weight:600; font-size:0.88rem; cursor:pointer;"><span class="i18n" data-hi="📍 Route Calculate Karein">📍 Calculate Route</span></button>
           <p id="routeStatus" style="font-size:0.78rem; color:rgba(251,245,234,0.5); margin-top:6px; min-height:16px;"></p>
           <div class="field">
             <label>ONE-WAY DISTANCE (KM) <span id="autoDistanceTag" style="color:var(--saffron); display:none;">— auto-calculated</span></label>
@@ -608,7 +616,7 @@
           <div class="result-line"><span>Fuel cost</span><span class="mono" id="outFuel">₹0</span></div>
           <div class="result-line"><span>Driver fee</span><span class="mono" id="outDriver">₹0</span></div>
           <div class="result-line total"><span>Fare per passenger</span><span class="mono" id="outTotal">₹0</span></div>
-          <p class="calc-hint">Yeh estimate hai — final fare route ki condition aur stops par nirbhar kar sakta hai.</p>
+          <p class="calc-hint"><span class="i18n" data-hi="Yeh estimate hai — final fare route ki condition aur stops par nirbhar kar sakta hai.">This is an estimate — the final fare may depend on route conditions and stops.</span></p>
         </div>
       </div>
     </div>
@@ -621,16 +629,16 @@
     <div class="about-grid">
       <div>
         <span class="kicker">About Us</span>
-        <h2 style="font-size:2.1rem;">Main khud driver hoon, service nahi.</h2>
+        <h2 style="font-size:2.1rem;"><span class="i18n" data-hi="Main khud driver hoon, service nahi.">I'm the driver myself, not a service.</span></h2>
         <div class="about-stat-block">
-          <div class="stat"><div class="n">1,00,000+</div><div class="l">KM ka driving experience</div></div>
-          <div class="stat"><div class="n">10+</div><div class="l">States cover kiye hue</div></div>
+          <div class="stat"><div class="n">1,00,000+</div><div class="l"><span class="i18n" data-hi="KM ka driving experience">KM of driving experience</span></div></div>
+          <div class="stat"><div class="n">10+</div><div class="l"><span class="i18n" data-hi="States cover kiye hue">States covered</span></div></div>
         </div>
       </div>
       <div class="about-copy">
-        <p><strong>Bharat Ride Tours India</strong> ek simple soch se shuru hua — bahut log two-wheeler pe ghoomna chahte hain, lekin ya toh chalana nahi aata, ya highway se darr lagta hai, ya bas koi saath nahi hota.</p>
-        <p>Meri apni scooty hai, apna helmet, apna license, PUC aur insurance — sab kuch ready. Rajasthan, UP, Uttarakhand, Delhi-NCR aur Himachal ke rastey main khud ghoom chuka hoon — Agra, Gwalior, Jhansi se lekar Nainital, Haridwar, Rishikesh, Purnagiri, Kainchi Dham tak.</p>
-        <p>Jahan 4-wheeler group ka wait karta hai aur budget bhi zyada hota hai, wahan aap akele bhi nikal sakte hain — bina kisi chinta ke.</p>
+        <p><span class="i18n" data-hi="&lt;strong&gt;Bharat Ride Tours India&lt;/strong&gt; ek simple soch se shuru hua — bahut log two-wheeler pe ghoomna chahte hain, lekin ya toh chalana nahi aata, ya highway se darr lagta hai, ya bas koi saath nahi hota."><strong>Bharat Ride Tours India</strong> started with a simple thought — many people want to travel by two-wheeler, but either they don't know how to ride, or they're afraid of the highway, or they simply have no one to go with.</span></p>
+        <p><span class="i18n" data-hi="Meri apni scooty hai, apna helmet, apna license, PUC aur insurance — sab kuch ready. Rajasthan, UP, Uttarakhand, Delhi-NCR aur Himachal ke rastey main khud ghoom chuka hoon — Agra, Gwalior, Jhansi se lekar Nainital, Haridwar, Rishikesh, Purnagiri, Kainchi Dham tak.">I have my own scooty, my own helmet, my own license, PUC and insurance — everything ready. I've personally ridden the routes of Rajasthan, UP, Uttarakhand, Delhi-NCR, and Himachal — from Agra, Gwalior, Jhansi to Nainital, Haridwar, Rishikesh, Purnagiri, Kainchi Dham.</span></p>
+        <p><span class="i18n" data-hi="Jahan 4-wheeler group ka wait karta hai aur budget bhi zyada hota hai, wahan aap akele bhi nikal sakte hain — bina kisi chinta ke.">Where a 4-wheeler group waits around and costs more, you can set off solo — without a worry.</span></p>
       </div>
     </div>
   </div>
@@ -641,16 +649,16 @@
   <div class="wrap">
     <span class="kicker">Trust & Safety</span>
     <div class="sec-head">
-      <h2>Har ride ke saath, kuch tay hai</h2>
+      <h2><span class="i18n" data-hi="Har ride ke saath, kuch tay hai">With every ride, some things are guaranteed</span></h2>
     </div>
     <div class="safety-grid">
-      <div class="safety-item"><div class="ic">DL</div><h4>Valid License</h4><p>Har rider ke paas valid driving license hona zaroori hai.</p></div>
-      <div class="safety-item"><div class="ic">🪖</div><h4>Helmet Compulsory</h4><p>Helmet provide kiya jaata hai, pehnna anivarya hai.</p></div>
-      <div class="safety-item"><div class="ic">₹</div><h4>Damage Policy</h4><p>Agar rider khud drive kare aur damage ho, uski zimmedari rider ki hai. Agar main drive karoon, koi charge nahi.</p></div>
-      <div class="safety-item"><div class="ic">✓</div><h4>Insured & Verified</h4><p>License, PUC aur insurance — sab documents ready hain.</p></div>
+      <div class="safety-item"><div class="ic">DL</div><h4>Valid License</h4><p><span class="i18n" data-hi="Har rider ke paas valid driving license hona zaroori hai.">Every rider must have a valid driving license.</span></p></div>
+      <div class="safety-item"><div class="ic">🪖</div><h4>Helmet Compulsory</h4><p><span class="i18n" data-hi="Helmet provide kiya jaata hai, pehnna anivarya hai.">A helmet is provided, and wearing it is mandatory.</span></p></div>
+      <div class="safety-item"><div class="ic">₹</div><h4>Damage Policy</h4><p><span class="i18n" data-hi="Agar rider khud drive kare aur damage ho, uski zimmedari rider ki hai. Agar main drive karoon, koi charge nahi.">If the rider drives themselves and damage occurs, it's the rider's responsibility. If I drive, there's no charge.</span></p></div>
+      <div class="safety-item"><div class="ic">✓</div><h4>Insured & Verified</h4><p><span class="i18n" data-hi="License, PUC aur insurance — sab documents ready hain.">License, PUC, and insurance — all documents ready.</span></p></div>
     </div>
     <div class="consent-note">
-      Solo women travellers ke liye ek short consent form bharwaya jaata hai — ismein emergency contact aur voluntary travel confirmation shaamil hai, taaki dono taraf clarity rahe.
+      <span class="i18n" data-hi="Solo women travellers ke liye ek short consent form bharwaya jaata hai — ismein emergency contact aur voluntary travel confirmation shaamil hai, taaki dono taraf clarity rahe.">Solo women travellers fill out a short consent form — it includes an emergency contact and voluntary travel confirmation, so there's clarity on both sides.</span>
     </div>
   </div>
 </section>
@@ -660,8 +668,8 @@
   <div class="wrap">
     <span class="kicker">Gallery</span>
     <div class="sec-head">
-      <h2>Asli safar, asli tasveerein</h2>
-      <p>Kisi stock photo ki nahi — humare khud ke rides se, real rasto se.</p>
+      <h2><span class="i18n" data-hi="Asli safar, asli tasveerein">Real journeys, real photos</span></h2>
+      <p><span class="i18n" data-hi="Kisi stock photo ki nahi — humare khud ke rides se, real rasto se.">Not stock photos — from our own rides, real roads.</span></p>
     </div>
     <div class="gallery-grid">
       <a class="gallery-item" href="gallery/gallery-1.jpg" target="_blank" rel="noopener">
@@ -697,8 +705,8 @@
   <div class="wrap">
     <span class="kicker">Contact Us</span>
     <div class="sec-head">
-      <h2>Baat karni hai? Seedha judiye.</h2>
-      <p>Call, WhatsApp ya email — jo bhi aapke liye aasan ho.</p>
+      <h2><span class="i18n" data-hi="Baat karni hai? Seedha judiye.">Want to talk? Reach out directly.</span></h2>
+      <p><span class="i18n" data-hi="Call, WhatsApp ya email — jo bhi aapke liye aasan ho.">Call, WhatsApp, or email — whichever is easiest for you.</span></p>
     </div>
     <div class="contact-grid">
       <a class="contact-card" href="tel:+919818062529">
@@ -731,19 +739,19 @@
     <div class="booking-inner">
       <div class="booking-copy">
         <span class="kicker">Booking</span>
-        <h2>Apna ride book karein</h2>
-        <p>Details bhariye, hum aapse route aur timing confirm karne ke liye contact karenge.</p>
+        <h2><span class="i18n" data-hi="Apna ride book karein">Book your ride</span></h2>
+        <p><span class="i18n" data-hi="Details bhariye, hum aapse route aur timing confirm karne ke liye contact karenge.">Fill in the details, we'll contact you to confirm the route and timing.</span></p>
         <ul class="terms-list">
-          <li>Ghar tak pickup aur drop shaamil</li>
-          <li>Boys aur girls dono ke liye equally available</li>
-          <li>Weight limit: 70 kg tak</li>
-          <li>Stops apni marzi se — bas return time thoda affect ho sakta hai</li>
-          <li>Payment ride se pehle confirm hota hai</li>
+          <li><span class="i18n" data-hi="Ghar tak pickup aur drop shaamil">Pickup and drop at your home included</span></li>
+          <li><span class="i18n" data-hi="Boys aur girls dono ke liye equally available">Equally available for boys and girls both</span></li>
+          <li><span class="i18n" data-hi="Weight limit: 70 kg tak">Weight limit: up to 70 kg</span></li>
+          <li><span class="i18n" data-hi="Stops apni marzi se — bas return time thoda affect ho sakta hai">Stops as you like — it may just affect the return time a little</span></li>
+          <li><span class="i18n" data-hi="Payment ride se pehle confirm hota hai">Payment is confirmed before the ride</span></li>
         </ul>
       </div>
       <form class="book-form" id="bookForm">
         <div class="field-row">
-          <div><label>Naam</label><input type="text" id="bkName" placeholder="Aapka naam" required></div>
+          <div><label><span class="i18n" data-hi="Naam">Name</span></label><input type="text" id="bkName" placeholder="Aapka naam" required></div>
           <div><label>Phone</label><input type="tel" id="bkPhone" placeholder="10-digit mobile" required></div>
         </div>
         <div class="field-row">
@@ -762,7 +770,7 @@
           <div><label>Preferred Date</label><input type="date" id="bkDate"></div>
         </div>
         <div><label>Special requests / stops</label><input type="text" id="bkNotes" placeholder="e.g. Fatehpur Sikri pe 20 min rukna hai"></div>
-        <button type="submit" class="btn-primary" style="margin-top:6px; width:fit-content;">Booking request bhejein</button>
+        <button type="submit" class="btn-primary" style="margin-top:6px; width:fit-content;"><span class="i18n" data-hi="Booking request bhejein">Send booking request</span></button>
       </form>
     </div>
   </div>
@@ -771,7 +779,7 @@
 <footer>
   <div class="wrap">
     <div class="brand" style="font-size:1rem;"><img src="icon-192.png" alt="BRTI logo" style="width:28px; height:28px; border-radius:50%;"> Bharat Ride Tours India</div>
-    <p>Gurugram, Haryana · Har gali, har mod, aapke saath. · <a href="https://www.instagram.com/bharatridetoursindia/" target="_blank" rel="noopener" style="color:var(--saffron-deep); text-decoration:none;">@bharatridetoursindia</a></p>
+    <p>Gurugram, Haryana · <span class="i18n" data-hi="Har gali, har mod, aapke saath.">Every lane, every turn, with you.</span> · <a href="https://www.instagram.com/bharatridetoursindia/" target="_blank" rel="noopener" style="color:var(--saffron-deep); text-decoration:none;">@bharatridetoursindia</a></p>
   </div>
 </footer>
 <div class="flag-strip"></div>
@@ -798,6 +806,29 @@ function calc(){
   document.getElementById(id).addEventListener('change', calc);
 });
 calc();
+
+// ---- Language toggle: English (default) / Hindi ----
+(function(){
+  const items = document.querySelectorAll('.i18n');
+  items.forEach(el => { el.dataset.en = el.innerHTML; });
+
+  function setLang(lang){
+    items.forEach(el => {
+      el.innerHTML = (lang === 'hi' && el.dataset.hi) ? el.dataset.hi : el.dataset.en;
+    });
+    document.documentElement.lang = lang;
+    try{ localStorage.setItem('brti_lang', lang); }catch(e){}
+    document.querySelectorAll('.lang-btn').forEach(b => b.classList.toggle('active', b.dataset.lang === lang));
+  }
+
+  document.querySelectorAll('.lang-btn').forEach(b => {
+    b.addEventListener('click', () => setLang(b.dataset.lang));
+  });
+
+  let saved = 'en';
+  try{ saved = localStorage.getItem('brti_lang') || 'en'; }catch(e){}
+  setLang(saved);
+})();
 
 // ---- Location autocomplete (OpenStreetMap Nominatim — free, no API key) ----
 let fromCoords = null;
